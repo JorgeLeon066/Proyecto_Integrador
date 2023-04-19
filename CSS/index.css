@@ -165,114 +165,60 @@ header {
 
 }
 
-
-
-
-/* ///////////////////===> HEADER <===/////////////////////////////// */
-
-/* .encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #30343F;
-    height: 144px;
-
-
+/* HERO */
+/* .hero__ */
+.hero {
+    background-image: url(../img/funkos-banner.webp);
+    padding: var(--spacing-128);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
-.encabezado .grupo-nav {
+.hero::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
-    margin-inline: 110px;
-    display: flex;
-    justify-content: space-between;
-
-
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
 }
 
-.encabezado .grupo-nav .box-2 {
-    display: flex;
-    align-items: center;
-}
-.encabezado .grupo-nav .box-2 a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-left: 49px;
-}
-
-/* //////////////////////// ===> banner <=== /////////////////////////////// 
-.banner {
-    height: 388px;
+.hero__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 110px;
-    background-image: url(./img/funkos-banner.webp);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    gap:var(--spacing-20);
+    align-items: start;
+    position: relative;
+    z-index: 2;
 }
-.banner h1{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    margin-bottom: 7px;
-    color: #FFFFFF;
 
+.hero__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-sold);
 }
-.banner p {
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 48px;
-    color: #FFFFFF;
 
+.hero__text {
+    font-family: var(--alternative-font);
+    color: var(--light-font-sold);
+    font-size: var(--font-medium);
 }
-.banner button {
-    width: 211px;
-    height: 47px;
+
+.hero__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
-    border-color: transparent;
-    background: #FFFFFF;
+    font-weight: 500;
+    transition: all .3 ease-in-out;
 }
 
-/* //////////////////////// ===> FOOTER <=== /////////////////////////////// 
-
-.pie-pagina{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 343px;
-    background-color: #30343F;
+.hero__link:hover {
+    background-color: var(--primary-900);
+    color: var(--light-font-sold);
 }
-.pie-pagina .grupo-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 85px;
-    margin-inline: 110px;
-}
-.pie-pagina .grupo-1 .box-1 a {
-    display: flex;
-    text-decoration: none;
-    padding-bottom: 10px;
-    color: white;
-    
-
-}
-.pie-pagina .grupo-1 .box-2 figure{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 16px;
-}
-
-.pie-pagina .grupo-2 {
-    display: flex;
-    justify-content: center;
-}
-.pie-pagina .grupo-2 small {
-    color: white;
-    font-size: 14.8px;
-    margin-bottom: 10.5px;
-} */
-
-
-
